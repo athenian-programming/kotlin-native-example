@@ -1,6 +1,6 @@
 package sample.helloworld
 
-fun hello(): String = "Hello, Kotlin/Native!"
+fun hello() = "Hello, Kotlin/Native!"
 
 fun main() {
     println(hello())

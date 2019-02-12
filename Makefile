@@ -1,9 +1,19 @@
 default: all
 
-all: clean build
+all: clean buildit
 
-build:
+buildit:
 	./gradlew assemble
+
+test:
+	./gradlew check
+
+run:
+	./gradlew runHelloWorldAppReleaseExecutableHelloWorld
 
 clean:
 	rm -rf build
+
+versioncheck:
+	./gradlew dependencyUpdates
+
